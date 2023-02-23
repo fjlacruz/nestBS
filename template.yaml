@@ -6,7 +6,7 @@ metadata:
   description: Create a new services project Nest Js
   tags:
     - nest
-    - Services
+
 spec:
   owner: francisco.delacruz@babelgroup.com
   type: services
