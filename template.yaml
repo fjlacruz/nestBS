@@ -1,15 +1,15 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: create-nest-app-template
-  title: Create nest App Template
-  description: Create a new CRA website project
+  name: create-nest-service-template
+  title: Create nest Service Template
+  description: Create a new CRA services project
   tags:
     - nest
     - cra
 spec:
   owner: web@example.com
-  type: website
+  type: services
   parameters:
     - title: Provide some simple information
       required:
@@ -24,7 +24,7 @@ spec:
         description:
           title: Description
           type: string
-          description: Help others understand what this website is for.
+          description: Help others understand what this services is for.
         owner:
           title: Owner
           type: string
