@@ -3,12 +3,12 @@ kind: Template
 metadata:
   name: create-nest-service-template
   title: Create nest Service Template
-  description: Create a new CRA services project
+  description: Create a new services project Nest Js
   tags:
     - nest
-    - cra
+    - Services
 spec:
-  owner: web@example.com
+  owner: francisco.delacruz@babelgroup.com
   type: services
   parameters:
     - title: Provide some simple information
