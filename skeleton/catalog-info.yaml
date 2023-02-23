@@ -4,11 +4,8 @@ metadata:
   name: ${{values.component_id | dump}}
   {%- if values.description %}
   links:
-
     - url: https://dashboard.example.com
-
       title: My Dashboard
-
       icon: dashboard
   description: ${{values.description | dump}}
   {%- endif %}
