@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{values.component_id | dump}}
+  {%- if values.description %}
+  links:
+    - url: https://dashboard.example.com
+      title: My Dashboard
+      icon: dashboard
+  description: ${{values.description | dump}}
+  {%- endif %}
+  annotations:
+    github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
+    backstage.io/techdocs-ref: dir:.
+    #aws.com/lambda-function-name: test-lambda
+    #aws.com/lambda-region: us-east-1
+    jenkins.io/job-full-name: "instanceName:job-backstage"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: ${{values.owner | dump}}
