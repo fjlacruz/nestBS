@@ -12,8 +12,8 @@ metadata:
   annotations:
     github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
     backstage.io/techdocs-ref: dir:.
-    aws.com/lambda-function-name: test-lambda
-    aws.com/lambda-region: us-east-1
+    #aws.com/lambda-function-name: test-lambda
+    #aws.com/lambda-region: us-east-1
     jenkins.io/job-full-name: "instanceName:job-backstage"
 spec:
   type: service
